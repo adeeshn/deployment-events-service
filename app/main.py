@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from app.routers import deployments
 
 
-app = FastAPI(title="FastAPI App")
+app = FastAPI(title="Deployment Events App")
 
 app.include_router(deployments.router)
 

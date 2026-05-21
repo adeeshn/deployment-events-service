@@ -110,19 +110,21 @@ GET /deployments/deploy_001
 
 ---
 
-# OpenAPI Docs
+# OpenAPI Docs & Interactive Testing
 
-FastAPI automatically generates API documentation:
+FastAPI automatically generates interactive API documentation that can be used for testing:
 
-- Swagger UI:
+- **Swagger UI (interactive testing):**
   ```text
   http://127.0.0.1:8000/docs
   ```
+  This is a fully interactive interface where you can test all API endpoints directly. Click any endpoint to expand it, fill in parameters, and see live responses. Perfect for exploring the API without writing code.
 
-- ReDoc:
+- **ReDoc (Read-Only Documentation):**
   ```text
   http://127.0.0.1:8000/redoc
   ```
+  Provides a clean, read-only view of the API schema.
 
 ---
 
