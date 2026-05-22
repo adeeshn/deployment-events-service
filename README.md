@@ -133,7 +133,7 @@ FastAPI automatically generates interactive API documentation that can be used f
 ## Build image
 
 ```bash
-docker build --no-cache -t deployment-events-service .
+docker build -t deployment-events-service .
 ```
 
 ## Run container

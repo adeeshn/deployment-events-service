@@ -33,9 +33,7 @@ def seed_deployments():
                 "service": service,
                 "status": status,
                 "duration": 120 + (i * 17) % 400,
-                "timestamp": (
-                    base_time + timedelta(hours=i * 3)
-                ).isoformat(),
+                "timestamp": (base_time + timedelta(hours=i * 3)).isoformat(),
                 "commit_sha": f"abc{i + 1000:04x}",
             }
         )

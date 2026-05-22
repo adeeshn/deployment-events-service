@@ -14,16 +14,12 @@ class DeploymentRepository:
 
         if service:
             results = [
-                deployment
-                for deployment in results
-                if deployment["service"] == service
+                deployment for deployment in results if deployment["service"] == service
             ]
 
         if status:
             results = [
-                deployment
-                for deployment in results
-                if deployment["status"] == status
+                deployment for deployment in results if deployment["status"] == status
             ]
 
         return results
